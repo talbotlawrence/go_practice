@@ -21,9 +21,11 @@ func (g *Game) Update(screen *ebiten.Image) error {
 	if ebiten.IsMouseButtonPressed(ebiten.MouseButtonLeft) {
 		x, y := ebiten.CursorPosition()
 
-		if x >= buttonRect.Min.X && x <= buttonRect.Max.X &&
-			y >= buttonRect.Min.Y && y <= buttonRect.Max.Y {
-			fmt.Println("Hello")
+		if x >= buttonRect.Min.X &&
+			x <= buttonRect.Max.X &&
+			y >= buttonRect.Min.Y &&
+			y <= buttonRect.Max.Y {
+				fmt.Println("Hello World")
 		}
 	}
 	return nil
